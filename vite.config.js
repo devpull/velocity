@@ -3,7 +3,7 @@ import { resolve } from 'path'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/velocity.github.io/',
+  base: '/velocity/',
   esbuild: {
     drop: ['console', 'debugger']
   },
