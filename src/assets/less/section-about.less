@@ -1,0 +1,44 @@
+.cards-wrapper {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex-basis: 18.75rem;
+  flex-grow: 1;
+  padding: 36px 16px 25px;
+  border: 1px solid var(--clr-card-border);
+  border-radius: 5px;
+  background-color: var(--clr-card-back);
+  text-align: center;
+
+  &__image {
+    margin-bottom: 1.18rem;
+    width: 94px;
+    height: 94px;
+    object-fit: contain;
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.43rem;
+    height: 3.37rem;
+    color: var(--clr-section-title);
+  }
+
+  &__caption-wrapper {
+    max-width: 50ch;
+    margin-inline: auto;
+  }
+
+  &__caption {
+    font-size: 0.875rem;
+    line-height: 1.78;
+    text-align: left;
+    color: var(--clr-section-block-caption);
+  }
+}

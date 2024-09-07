@@ -1,0 +1,36 @@
+.welcome {
+  min-height: 600px;
+  height: calc(100vh - 74px);
+  color: var(--clr-welcome-text);
+  padding: 12rem 0;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--clr-welcome-back);
+  background-image: url("../img/welcome-bg.jpg");
+  background-size: cover;
+  background-position: center;
+
+  &__heading {
+    text-transform: uppercase;
+    font-size: clamp(3rem, 10vw, 3.68rem);
+    line-height: 1;
+    letter-spacing: 0.4rem;
+    margin-bottom: 100px;
+    text-shadow: 0px 5px 5px #343434;
+
+    @media(max-width: 400px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__links {
+    gap: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

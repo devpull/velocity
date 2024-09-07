@@ -1,0 +1,51 @@
+.link-primary {
+  display: inline-block;
+  padding: 0.68em 1.875em;
+
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.125rem;
+
+  color: var(--clr-welcome-text);
+  background-color: var(--clr-link-primary-back);
+  border-radius: 0.4rem;
+
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: var(--clr-link-primary-hover);
+  }
+
+  &:active {
+    background-color: var(--clr-link-primary-active);
+  }
+}
+
+.link {
+  display: inline-block;
+  padding: 0.625em 1.875em;
+
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.125rem;
+
+  color: var(--clr-welcome-text);
+  border: 1px solid var(--clr-link-border);
+  border-radius: 0.4rem;
+
+  transition: border-color 0.1s, background-color 0.1s;
+
+  &:focus {
+    border: 1px solid var(--clr-link-border-focus);
+  }
+
+  &:hover {
+    background-color: var(--clr-link-back-hover);
+    border-color: var(--clr-link-border-hover);
+  }
+
+  &:active {
+    background-color: var(--clr-link-back-active);
+    border-color: var(--clr-link-border-active);
+  }
+}

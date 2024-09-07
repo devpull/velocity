@@ -1,0 +1,134 @@
+.header {
+  width: 100%;
+
+  position: sticky;
+  top: 0;
+  background-color: var(--clr-header-back);
+  z-index: 100;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+
+  .logo {
+    margin: 20px 0;
+    font-size: 1.56rem;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    padding-left: 15px;
+
+    &__link {
+      color: var(--clr-header-logo-text);
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 0;
+  }
+
+  &__nav-menu {
+    display: flex;
+
+    li + li {
+      margin-left: min(40px, 6vw);
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__nav-link {
+    font-size: 1rem;
+    color: var(--clr-nav-link-default);
+    transition: color 0.2s;
+
+    &:hover {
+      color: var(--clr-nav-link-hover);
+    }
+
+    &:active {
+      color: var(--clr-nav-link-active);
+    }
+
+    &.is-active {
+      font-weight: 600;
+    }
+  }
+}
+
+.nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 90;
+  overflow-y: auto;
+  visibility: hidden;
+  transition: top 0.2s, visibility 0.2s;
+  overscroll-behavior-y: contain;
+
+  &.is-opened {
+    visibility: visible;
+  }
+}
+
+.nav-m__hamburger {
+  &[aria-expanded="true"] {
+    background-color: var(--clr-main);
+  }
+
+  &[aria-expanded="true"] > .nav-m__hamburger-block > span {
+    background-color: var(--clr-white);
+  }
+
+  &-block {
+    width: 74px;
+    height: 74px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    span {
+      display: block;
+      height: 4px;
+      background-color: var(--clr-black);
+      border-radius: 3px;
+    }
+
+    span + span {
+      margin-top: 8px;
+    }
+  }
+
+  @media (min-width: 769px) {
+    display: none;
+  }
+}
+
+.nav-m {
+  background-color: var(--clr-main);
+
+  &__link {
+    padding: 1em;
+    display: block;
+    color: var(--clr-hamburger-link-default);
+    border-bottom: 1px solid var(--clr-hamburger-link-border-bottom);
+  }
+
+  &__link + &__link:last-child {
+    border-bottom: none;
+  }
+
+  &__link:active {
+    color: var(--clr-hamburger-link-active);
+  }
+
+  &__link.is-active {
+    font-weight: 600;
+    color: var(--clr-hamburger-link-is-active);
+  }
+}

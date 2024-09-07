@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/assets/less/main.less" />
+    <title>Velocity</title>
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="container header__container">
+        <h1 class="logo">
+          <a class="logo__link" href="/" aria-current="page" aria-label="Дом"
+            >Velocity</a
+          >
+        </h1>
+
+        <nav class="header__nav" role="navigation">
+          <ul class="header__nav-menu">
+            <li class="haeder__nav-item">
+              <a class="header__nav-link is-active" href="/" aria-current="page"
+                >Домой</a
+              >
+            </li>
+            <li class="haeder__nav-item">
+              <a class="header__nav-link" href="#site-contacts">Контакты</a>
+            </li>
+          </ul>
+          <div
+            id="nav-m__hamburger"
+            class="nav-m__hamburger"
+            aria-label="menu"
+            aria-controls="nav-overlay"
+            aria-haspopup="menu"
+            aria-expanded="false"
+            tabindex="0"
+            role="button"
+          >
+            <div class="nav-m__hamburger-block">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div id="nav-overlay" class="nav-overlay">
+      <nav class="nav-m">
+        <a class="nav-m__link is-active" href="/" aria-current="page">Домой</a>
+        <a class="nav-m__link" href="#site-contacts">Контакты</a>
+      </nav>
+    </div>
+
+    <main class="main" role="main">
+      <section class="welcome">
+        <div class="container">
+          <h2 class="welcome__heading">This is velocity</h2>
+
+          <div class="welcome__links">
+            <a
+              href="#!"
+              class="link-primary"
+              role="button"
+              aria-label="Регистрация"
+              >Регистрация</a
+            >
+            <a
+              href="#!"
+              class="link"
+              role="button"
+              aria-label="Больше информации"
+              >Больше информации</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="about common-section">
+        <div class="container">
+          <div class="titles-wrapper">
+            <h3 class="section-title" role="heading">Что мы можем</h3>
+            <p class="section-subtitle" role="heading">
+              Далеко-далеко за словесными горами в стране.
+            </p>
+          </div>
+
+          <div class="cards-wrapper">
+            <div class="card">
+              <img
+                class="card__image"
+                src="./src/assets/img/svg/card-icon1.svg"
+                alt="Карточка 1"
+              />
+              <h4 class="card__title">Графический дизайн</h4>
+              <div class="card__caption-wrapper">
+                <p class="card__caption">
+                  Далеко-далеко за словесными горами в стране гласных и
+                  согласных живут рыбные тексты. Безорфографичный, над.
+                </p>
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                class="card__image"
+                src="./src/assets/img/svg/card-icon2.svg"
+                alt="Карточка 2"
+              />
+              <h4 class="card__title">Чистый код</h4>
+              <div class="card__caption-wrapper">
+                <p class="card__caption">
+                  Далеко-далеко за словесными горами в стране гласных и
+                  согласных живут рыбные тексты. Собрал, свой.
+                </p>
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                class="card__image"
+                src="./src/assets/img/svg/card-icon3.svg"
+                alt="Карточка 3"
+              />
+              <h4 class="card__title">Беспланый шаблон</h4>
+              <div class="card__caption-wrapper">
+                <p class="card__caption">
+                  Далеко-далеко за словесными горами в стране гласных и
+                  согласных живут рыбные тексты. Ведущими образ продолжил
+                  буквенных.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services common-section common-section--dark">
+        <div class="container">
+          <div class="titles-wrapper">
+            <h3 class="section-title">Что мы можем</h3>
+            <p class="section-subtitle">
+              Далеко-далеко за словесными горами в стране.
+            </p>
+          </div>
+
+          <div class="services-wrapper">
+            <div class="service">
+              <img
+                class="service__image"
+                src="./src/assets/img/services1.jpg"
+                alt="Сервис 1"
+              />
+              <h4 class="service__title">Услуга 1</h4>
+              <p class="service__caption">
+                Далеко-далеко за словесными горами в стране гласных и согласных
+                живут рыбные тексты. Собрал, свой. Далеко-далеко за словесными
+                горами в стране гласных и согласных живут рыбные тексты.
+              </p>
+              <a href="#!" class="link">Больше информации</a>
+            </div>
+
+            <div class="service">
+              <img
+                class="service__image"
+                src="./src/assets/img/services2.jpg"
+                alt="Сервис 2"
+              />
+              <h4 class="service__title">Услуга 2</h4>
+              <p class="service__caption">
+                Далеко-далеко за словесными горами в стране гласных и согласных
+                живут рыбные тексты. Собрал, свой. Далеко-далеко за словесными
+                горами в стране, гласных и согласных живут рыбные тексты.
+              </p>
+              <a href="#!" class="link">Больше информации</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tabs-section common-section">
+        <div class="container">
+          <div class="titles-wrapper">
+            <h3 class="section-title">Далеко-далеко, за.</h3>
+            <p class="section-subtitle">
+              Далеко-далеко за словесными горами в стране.
+            </p>
+          </div>
+
+          <div class="tabs">
+            <nav class="tabs__nav" role="tablist">
+              <button
+                id="tabs-tab-0"
+                class="tabs__button"
+                type="button"
+                role="tab"
+                aria-selected="true"
+              >
+                Tab button 1</button
+              ><button
+                id="tabs-tab-1"
+                class="tabs__button"
+                type="button"
+                role="tab"
+                aria-selected="false"
+              >
+                Tab button 2</button
+              ><button
+                id="tabs-tab-2"
+                class="tabs__button"
+                type="button"
+                role="tab"
+                aria-selected="false"
+              >
+                Tab button 3
+              </button>
+            </nav>
+
+            <div class="tabs__items">
+              <div
+                id="tabs-pane-0"
+                class="tabs__item tabs__item--active"
+                role="tabpanel"
+                aria-labelledby="tabs-tab-0"
+              >
+                <img
+                  class="tabs__desc-image"
+                  src="./src/assets/img/tab1.jpg"
+                  alt="Изображение таба 1"
+                />
+                <h4 class="tabs__desc-title">Заголовок для таба 1</h4>
+                <p class="tabs__desc-caption">
+                  Далеко-далеко за словесными горами в стране гласных и
+                  согласных живут рыбные тексты. Даль страну приставка пустился
+                  толку по всей раз несколько, знаках инициал дороге жаренные
+                  послушавшись моей семантика, дал до то которое осталось?
+                </p>
+              </div>
+              <div
+                id="tabs-pane-1"
+                class="tabs__item"
+                role="tabpanel"
+                aria-labelledby="tabs-tab-1"
+              >
+                <img
+                  class="tabs__desc-image"
+                  src="./src/assets/img/tab2.jpg"
+                  alt="Изображение таба 2"
+                />
+                <h4 class="tabs__desc-title">Заголовок для таба 2</h4>
+                <p class="tabs__desc-caption">
+                  Далеко-далеко за словесными горами в стране гласных и
+                  согласных, живут рыбные тексты. По всей, власти. Его вопроса
+                  собрал снова ты своего журчит она но, своих коварный.
+                  Переписали заманивший живет моей оксмокс вскоре пустился?
+                </p>
+              </div>
+              <div
+                id="tabs-pane-2"
+                class="tabs__item"
+                role="tabpanel"
+                aria-labelledby="tabs-tab-2"
+              >
+                <img
+                  class="tabs__desc-image"
+                  src="./src/assets/img/tab3.jpg"
+                  alt="Изображение таба 3"
+                />
+                <h4 class="tabs__desc-title">Заголовок для таба 3</h4>
+                <p class="tabs__desc-caption">
+                  Далеко-далеко за словесными горами, в стране гласных и
+                  согласных живут рыбные тексты. Переулка текст ее одна текстами
+                  запятой семантика скатился страна речью вопрос, великий она
+                  использовало свой ведущими не буквоград то все маленький
+                  залетают щеке своего однажды до заголовок!
+                </p>
+              </div>
+            </div>
+
+            <div class="tabs__desc"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="site-contacts" class="footer">
+      <div class="container">
+        <div class="footer__desc">
+          <div class="footer-item">
+            <h5 class="footer-item__heading">о Velocity</h5>
+            <p class="footer-item__caption">
+              Далеко-далеко за словесными горами в стране гласных и согласных
+              живут рыбные тексты. Мир курсивных, агентство она вопрос всеми
+              текстами дал своих свой.
+            </p>
+          </div>
+          <div class="footer-item">
+            <h5 class="footer-item__heading">Полезные ссылки</h5>
+            <ul class="footer-item__nav">
+              <li><a href="#!">Далеко-далеко за словесными.</a></li>
+              <li><a href="#!">Дорогу живет необходимыми от всех?</a></li>
+              <li><a href="#!">Толку жизни буквоград языкового?</a></li>
+              <li><a href="#!">Силуэт пустился напоивший!</a></li>
+            </ul>
+          </div>
+          <div class="footer-item">
+            <h5 class="footer-item__heading">Соц. сети</h5>
+            <ul class="footer-item__nav footer-item__social">
+              <li>
+                <a href="#!"
+                  ><i><img src="./src/assets/img/svg/icon-x.svg" alt="" /></i
+                  >X</a
+                >
+              </li>
+              <li>
+                <a href="#!"
+                  ><i><img src="./src/assets/img/svg/icon-fb.svg" alt="" /></i
+                  >Facebook</a
+                >
+              </li>
+              <li>
+                <a href="#!"
+                  ><i><img src="./src/assets/img/svg/icon-pt.svg" alt="" /></i
+                  >Pinterest</a
+                >
+              </li>
+              <li>
+                <a href="#!"
+                  ><i
+                    ><img
+                      src="./src/assets/img/svg/icon-google.svg"
+                      alt="" /></i
+                  >Google</a
+                >
+              </li>
+              <li>
+                <a href="#!"
+                  ><i><img src="./src/assets/img/svg/icon-wb.svg" alt="" /></i
+                  >Webflow</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__copy">
+        <div class="container">Создано в Webflow. Вёрстка — ArtBrains</div>
+      </div>
+    </footer>
+
+    <script type="module" src="./src/assets/js/top-menu.js"></script>
+    <script type="module" src="./src/assets/js/tabs-menu.js"></script>
+  </body>
+</html>
