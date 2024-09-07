@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && cp dist/* -r 'docs'",
+    "build": "vite build && rm -rf docs/* && cp dist/* -r 'docs'",
     "preview": "vite preview"
   },
   "browserslist": [
